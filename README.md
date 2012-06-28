@@ -1,16 +1,9 @@
 influence
 =========
 
-        L’influence a pour objectif de modifier le comportement d’une cible
-        sans recours à la contrainte ou la coercition. Dans ce cas, les
-        individus ciblés agissent de leur plein gré, consciemment ou pas, alors
-        que dans le cas de la contrainte ils agissent consciemment contre leur
-        gré.
+    L’influence a pour objectif de modifier le comportement d’une cible sans recours à la contrainte ou la coercition. Dans ce cas, les individus ciblés agissent de leur plein gré, consciemment ou pas, alors que dans le cas de la contrainte ils agissent consciemment contre leur gré.
 
-        L’influence est également l’un des 11 facteurs d’intelligence économique,
-        dans le modèle de l’AFDIE (Association française pour le développement
-        de l’intelligence économique). Lorsqu’il s’agit d’influence à des fins
-        négatives on parle alors de manipulation.
+    L’influence est également l’un des 11 facteurs d’intelligence économique, dans le modèle de l’AFDIE (Association française pour le développement de l’intelligence économique). Lorsqu’il s’agit d’influence à des fins négatives on parle alors de manipulation.
 
 Projet
 ======
@@ -29,11 +22,11 @@ La notion de libre s’applique à la partie logiciel :
 ====================================================
 
 Un logiciel est libre selon la Free Software Foundation s’il confère à son utilisateur quatre libertés (numérotées de 0 à 3) :
-
-        0 la liberté d’exécuter le programme, pour tous les usages,
-        1 la liberté d’étudier le fonctionnement du programme et de l’adapter à ses besoins,
-        2 la liberté de redistribuer des copies du programme (ce qui implique la possibilité aussi bien de donner que de vendre des copies),
-        3 la liberté d’améliorer le programme et de distribuer ces améliorations au public, pour en faire profiter toute la communauté.
+  
+    0 la liberté d’exécuter le programme, pour tous les usages,
+    1 la liberté d’étudier le fonctionnement du programme et de l’adapter à ses besoins,
+    2 la liberté de redistribuer des copies du programme (ce qui implique la possibilité aussi bien de donner que de vendre des copies),
+    3 la liberté d’améliorer le programme et de distribuer ces améliorations au public, pour en faire profiter toute la communauté.
 
 ces libertés doivent être irrévocables.
 
@@ -44,10 +37,10 @@ Une donnée ouverte (en anglais open data) est une information publique brute, q
 
 La donnée ouverte est un outil anti-monopolistique qui apporte un bénéfice structurel à la société civile. La réussite de ce modèle repose sur quatre problématiques :
 
-        l’existence de la donnée ;
-        le format de la donnée brute (RDF, PDF, RSS…) ;
-        la qualité de la donnée ;
-        la fréquence et l’automatisation des mises à jour de la donnée.
+    l’existence de la donnée ;
+    le format de la donnée brute (RDF, PDF, RSS…) ;
+    la qualité de la donnée ;
+    la fréquence et l’automatisation des mises à jour de la donnée.
 
 Ses principaux avantages sont de faciliter la réduction des coûts mais aussi les innovations de rupture par l’émergence d’usages inattendus. À titre d’illustration, la publication de données ouvertes sur les hôpitaux permet d’améliorer la qualité de leurs services. 
 
