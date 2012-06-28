@@ -1,0 +1,80 @@
+<!--
+Copyright (C) 2011 by Allain Lalonde (allain.lalonde@gmail.com)
+
+See the file LICENSE.txt for copying permission.
+-->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Bubble Up</title>
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="jquery.wysiwyg.css" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.10/jquery-ui.min.js"></script>
+<script type="text/javascript" src="Rectangle.js"></script>
+<script type="text/javascript" src="ListenerPool.js"></script>
+<script type="text/javascript" src="Point.js"></script>
+<script type="text/javascript" src="Relation.js"></script>
+<script type="text/javascript" src="Concept.js"></script>
+<script type="text/javascript" src="ConceptMap.js"></script>
+<script type="text/javascript" src="ConceptMapUI.js"></script>
+<script type="text/javascript" src="SpringLayout.js"></script>
+<script type="text/javascript">
+$(function() {
+  var conceptMap = new ConceptMap();
+  var conceptMapUI = new ConceptMapUI("container", conceptMap, new SpringLayout());
+  conceptMap.listeners.push(conceptMapUI);  
+  conceptMap.loadFacts($("#concepts").val());
+  $("#concepts").change(function(e) {
+    conceptMap.loadFacts(this.value);
+  });
+
+  setInterval(function () { conceptMapUI.paint(); }, 50);
+});
+</script>
+</head>
+<body>
+<div id="container"></div>
+<textarea id="concepts" rows="10" cols="60" style="display: none;">
+groupe Lagardère " possède de 50% à 100% du " groupe Hachette filipacchi
+groupe Lagardère " possède de 50% à 100% du " groupe Hachette livre
+groupe Lagardère " possède de 50% à 100% du " groupe Lagardère thématiques
+groupe Lagardère " possède de 50% à 100% de la " chaine de magasin RELAY
+groupe Lagardère " possède de 50% à 100% de la " chaine de magasin Virgin
+groupe Lagardère " possède de 50% à 100% du " média le furet du nord
+groupe Lagardère " possède de 50% à 100% du " média N MPP
+groupe Lagardère " possède de 50% à 100% du " média LCM la chaine marseille
+groupe Lagardère " possède de 50% à 100% du " média téva
+groupe Lagardère " possède de 50% à 100% du " média Europe1
+groupe Lagardère " possède de 50% à 100% du " média Europe2
+groupe Lagardère " possède de 50% à 100% du " média Europe2TV
+groupe Lagardère " possède de 50% à 100% du " média RFM
+groupe Lagardère " possède 34% du " média Canalsat
+groupe Lagardère " achéte le " média CANAL+
+
+groupe Lagardère thématiques " possède de 50% à 100% du " média FillesTV
+groupe Lagardère thématiques " possède de 50% à 100% du " média MCM
+groupe Lagardère thématiques " possède de 50% à 100% du " média MEZZO
+groupe Lagardère thématiques " possède de 50% à 100% du " média Tiji
+groupe Lagardère thématiques " possède de 50% à 100% du " média CanalJ
+groupe Lagardère thématiques " possède de 50% à 100% du " média la chaine météo
+groupe Lagardère " possède 66% du " média Gulli
+
+groupe Hachette livre " possède de 50% à 100% du " média HAZAN
+groupe Hachette livre " possède de 50% à 100% du " média Stock
+groupe Hachette livre " possède de 50% à 100% du " média Le Livre de Poche
+groupe Hachette livre " possède de 50% à 100% du " média Disney Hachette
+groupe Hachette livre " possède de 50% à 100% du " média Grasset
+groupe Hachette livre " possède de 50% à 100% du " média Harlequin
+groupe Hachette livre " possède de 50% à 100% du " média calmann-lévy
+groupe Hachette livre " possède de 50% à 100% du " média LAROUSSE
+groupe Hachette livre " possède de 50% à 100% du " média fayard
+groupe Hachette livre " possède de 50% à 100% du " média marabout
+groupe Hachette livre " possède de 50% à 100% du " média HATIER
+groupe Hachette livre " possède de 50% à 100% du " média J'AI LU
+groupe Hachette livre " possède de 50% à 100% du " média Didier
+groupe Hachette livre " possède de 50% à 100% du " média JC Lattès
+</textarea>
+</body>
+</html>
